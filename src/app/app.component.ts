@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  todoList = [{title: 'პური', status: 1}];
+
+  onAdd(title) {
+    this.todoList.push({title: title, status: 1});
+  }
+
 }
+
